@@ -2,7 +2,7 @@
 
 html, body {
 	font-family: outfit;
-	min-height: 1000px;
+	min-height: 750px;
 	height: 100%;
 	width: 100%;
 	margin: 0;
@@ -33,9 +33,43 @@ html, body {
 
 #nft {
 	width: 100%;
-	align-self: center;
 	border-radius: 10px;
+	transition: ease 1s;
+}
+
+#nft:hover{
+	filter: blur(2px)
+}
+
+#image{
+	position: relative;
+	height: 320px;
 	margin-bottom: 20px;
+	transition: ease 1s;
+}
+
+#overlay{
+	border-radius: 10px;
+	background-color: hsl(178, 100%, 50%);
+	position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+	transition: ease 1s;
+}
+
+#overlay:hover{
+	opacity: 50%;
+}
+
+#view{
+	position: absolute;
+	left: 136px;
+	top: 136px;
 }
 
 #label{
